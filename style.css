@@ -1,0 +1,249 @@
+body {
+    background-image: url("bg.GIF");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.cnop1, .cnop2, .cnop3, .cnop4 {
+	display: inline-block;
+color: white;
+text-align: center;
+border-radius:6px ;
+cursor: pointer;
+font-family: sans-serif ;
+font-weight: 700px;
+padding: 12px 24px;
+list-style: none;
+transition: background-color 0.2s ease;
+margin: 10px 0;
+background: linear-gradient(to bottom, #3B0973, #1A0333);
+border: 1px solid rgba(255, 255, 255, 0.1);
+box-shadow: 0 0 10px rgba(147, 112, 219, 0.2);
+font-family: sans-serif;
+font-size: 16px;
+margin-left: 30px;
+position: relative;
+
+
+}
+
+
+.cnop1:hover, .cnop2:hover, .cnop3:hover, .cnop4:hover {
+    background: linear-gradient(to bottom, #5D11A6, #3B0973); 
+}
+.text1 {
+background-color: rgba(15, 5, 25, 0.75);
+backdrop-filter: blur(8px);
+color: #f0f0f0;
+font-family: sans-serif;
+line-height: 1.6;
+border: 1px solid rgba(147, 112, 219, 0.2);
+border-left: 4px solid #5D11A6;
+border-radius: 4px;
+padding: 20px;
+margin-left: 30px;
+max-width: 800px;
+position: absolute;
+width: 600px;
+top: 100%;
+left: 100%;
+margin-left: 15px;
+
+
+
+}
+
+.h1 {
+	position: relative;
+
+	color:#e0e0e0 ;
+	font-family: sans-serif;
+	font-weight: 900;
+	max-width: 700px;
+	text-align: center;
+	margin: 20px auto 100px auto;
+}
+
+.maincnop {
+
+display: inline-block;
+cursor: pointer;
+color: white;
+text-align: center;
+font-family: sans-serif;
+font-weight: 700;
+padding: 20px 70px;
+list-style: none;
+transition: all 0.3s ease;
+margin: 10px 0;
+border-radius: 6px;
+border: 1px solid rgba(255, 255, 255, 0.15);
+background: linear-gradient(to bottom, #5D11A6, #3B0973, #1A0333);
+box-shadow: 0 0 15px rgba(147, 112, 219, 0.4);
+font-size: 20px;
+margin-bottom: 20px;
+
+}
+
+.maincnop2 {
+
+display: inline-block;
+cursor: pointer;
+color: white;
+text-align: center;
+font-family: sans-serif;
+font-weight: 700;
+padding: 20px 65px;
+list-style: none;
+transition: all 0.3s ease;
+margin: 10px 0;
+border-radius: 6px;
+border: 1px solid rgba(255, 255, 255, 0.15);
+background: linear-gradient(to bottom, #5D11A6, #3B0973, #1A0333);
+box-shadow: 0 0 15px rgba(147, 112, 219, 0.4);
+font-size: 20px;
+margin-bottom: 20px;
+
+
+}
+
+.maincnop3 {
+
+display: inline-block;
+cursor: pointer;
+color: white;
+text-align: center;
+font-family: sans-serif;
+font-weight: 700;
+padding: 20px 102.5px;
+list-style: none;
+transition: all 0.3s ease;
+margin: 10px 0;
+border-radius:6px;
+border: 1px solid rgba(255, 255, 255, 0.15);
+background: linear-gradient(to bottom, #5D11A6, #3B0973, #1A0333);
+box-shadow: 0 0 15px rgba(147, 112, 219, 0.4);
+font-size: 20px;
+margin-bottom: 20px;
+
+}
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+details[open] .text1 {
+	animation: fade-in 0.4s ease-out;
+}
+
+
+.h1::after {
+	content:"" ;
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 600px;
+	height: 8px;
+	border-radius: 6px;
+	background: linear-gradient(to right, #4B0082, #00CED1);
+}
+
+
+.cont {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+	margin: 50px auto;
+	max-width: 95%;
+	padding: 0 20px;
+	align-items: flex-start;
+}
+
+.ter {
+    flex: 1;
+    background-color: rgba(5, 5, 10, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.15);
+    max-width: 600px;
+    width: 550px;
+}
+.ter2 {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    background-color: rgba(30, 20, 45, 0.9); /* Темный фиолетово-серый фон шапки */
+    padding: 0 15px;
+    border-bottom: 1px solid rgba(147, 112, 219, 0.3); /* Тонкая полоса снизу */
+    border-radius: 4px 4px 0 0; /* Скругление только верхних углов */
+}
+
+/* Контейнер для трех точек */
+.terminal-buttons {
+    display: flex;
+    gap: 8px; /* Расстояние между кружочками */
+    margin-right: 15px;
+}
+
+/* Общие стили для всех точек */
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; /* Превращает квадрат в идеальный круг */
+    display: inline-block;
+}
+
+/* Цвета для каждой точки, как на macOS */
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+/* Текст заголовка в шапке */
+.terminal-title {
+    color: #a593c2; /* Мягкий фиолетово-серый цвет текста */
+    font-family: monospace; /* Компьютерный шрифт */
+    font-size: 13px;
+}
+
+.left-menu {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-right: auto;
+}
+
+.log-line {
+    color: #00FF00;
+    font-family: monospace;
+    font-size: 14px;
+    margin: 8px 0;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5); /* Эффект свечения букв */
+}
+
+
+/* Создаем анимацию мигания */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Привязываем мигание к курсору */
+.log-cursor {
+    color: #00FF00;
+    font-family: monospace;
+    font-size: 14px;
+    animation: blink 1s infinite steps(2);
+}
+
+.left-menu details details {
+    position: relative;
+    display: block;
+    top: 0;
+}
