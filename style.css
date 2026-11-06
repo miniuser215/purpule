@@ -3,6 +3,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    height: 100vh;
 }
 
 .cnop1, .cnop2, .cnop3, .cnop4 {
